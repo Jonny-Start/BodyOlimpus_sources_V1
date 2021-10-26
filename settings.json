@@ -1,0 +1,33 @@
+{
+    "window.zoomLevel": 0,
+    "editor.renderControlCharacters": false,
+    "git.confirmSync": false,
+    "git.enableSmartCommit": true,
+    "[html]": {
+        "editor.defaultFormatter": "lonefy.vscode-JS-CSS-HTML-formatter"
+    },
+    "editor.minimap.enabled": true,
+    "mssql.connections": [
+        {
+            "server": "{{put-server-name-here}}",
+            "database": "{{put-database-name-here}}",
+            "user": "{{put-username-here}}",
+            "password": "{{put-password-here}}"
+        }
+    ],
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "lonefy.vscode-JS-CSS-HTML-formatter"
+    },
+    "tabnine.experimentalAutoImports": true,
+
+    "liveSassCompile.settings.formats": [
+        {
+          "format": "compressed",
+          "extensionName": ".css",
+          "savePath": "/../BodyOlimpus/views/css"
+        }
+      ]
+}
