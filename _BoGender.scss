@@ -1,0 +1,111 @@
+body#bo_gender {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: $color_fondo;
+    width: 100%;
+    padding: 40px;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transition: 0.25s;
+    justify-content: center;
+
+    // div que contiene el form del gender
+    .card {
+        margin-bottom: 20px;
+        border: none;
+        background-color: transparent;
+
+        h5,
+        h6 {
+            color: $color_azul_oscuro;
+            font-weight: bold;
+        }
+        h6 {
+            margin-top: 10%;
+            margin-bottom: 10%;
+        }
+        // ul que contiene los dos botones de femenino y masculino con los demás objetos dentro
+        ul {
+            list-style: none;
+            display: block;
+            color: white;
+
+            li {
+                margin-top: 30%;
+                text-decoration: none;
+                list-style: none;
+                box-shadow: none;
+                background-color: transparent;
+                display: block;
+                justify-content: center;
+                align-items: center;
+                border: 2px solid $color_fondo;
+                border-radius: 27px;
+                position: relative;
+                right: 10%;
+                margin-bottom: 10%;
+                padding-top: 6%;
+                box-shadow: 3px 14px 27px $color_gris_bordes;
+
+                a {
+                    text-decoration: none;
+                    position: relative;
+                    left: 8%;
+
+                    img {
+                        max-width: 50%;
+                        position: relative;
+                        right: 9%;
+                    }
+                    label {
+                        color: $color_azul_oscuro;
+                        font-weight: bold;
+                        display: block;
+                        position: relative;
+                        right: 8%;
+                        margin-top: 4%;
+                    }
+                }
+            }
+        }
+
+        //  Botones de flecha hacia atrás y continuar
+        .button-back,
+        .button-next {
+            border: 0;
+            background: $color_azul_oscuro;
+            display: flex;
+            text-align: center;
+            outline: none;
+            color: white;
+            border-radius: 24px;
+            transition: 0.25s;
+            cursor: pointer;
+            height: auto;
+            width: 1%;
+            box-shadow: 1px 2px 6px #332f2f;
+        }
+        .button-back {
+            padding: 8px 24px 8px 10px;
+        }
+        .button-next {
+            margin: 65px 27px 17px 77px;
+            padding: 8px 87px 6px 13px;
+        }
+        // animaciones cuando se pasa el cursor por los botones
+        li:hover,
+        .button-back:hover,
+        .button-next:hover {
+            box-shadow: 0 4px 16px $color_hover_botones;
+            transition: all 0.2s ease;
+        }
+    }
+    // Para volver el programa responsive
+    @media (max-width: 768px) {
+        .box {
+            left: 0%;
+        }
+    }
+}
