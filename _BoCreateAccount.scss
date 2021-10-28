@@ -9,13 +9,11 @@ body#create_account {
     text-align: center;
     transition: 0.25s;
     justify-content: center;
-
     // div que contiene el form del create account
     .card {
         margin-bottom: 20px;
         border: none;
         background-color: transparent;
-
         // diseño de los elementos que se encuentran dentro del form del create account
         .form-create-account {
             .container-logo {
@@ -30,9 +28,9 @@ body#create_account {
                 font-weight: bold;
                 text-decoration: $color_azul_oscuro underline;
             }
-            .text-start{
+            .text-start {
                 color: $color_azul_oscuro;
-                text-decoration:  underline;
+                text-decoration: underline;
             }
             input[type="text"],
             input[type="password"] {
@@ -71,7 +69,6 @@ body#create_account {
                 }
             }
         }
-
         // animaciones cuando se pasa el cursor por los botones e inputs
         .form-create-account input[type="text"]:hover,
         .form-create-account input[type="password"]:hover,

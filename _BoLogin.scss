@@ -5,14 +5,12 @@ body#bo_login {
     justify-content: center;
     font-family: sans-serif;
     background: linear-gradient(to right, #0d6aab, #29435c);
-
     // div que contiene el form del login
     .card {
         margin-bottom: 20px;
         border: none;
         border-radius: 2px;
         background-color: transparent;
-
         // diseño de los elementos que se encuentran dentro del form del login
         .form-login {
             background: $color_fondo;
@@ -25,20 +23,19 @@ body#bo_login {
             justify-content: center;
             display: block;
             border-radius: 16px;
-
             .container-logo {
                 padding-bottom: 5%;
-
-                .logo-img {
-                    width: 72%;
-                    margin-top: 6%;
-                }
+                max-width: 23em;
+                // .logo-img {
+                //     width: 72%;
+                //     margin-top: 6%;
+                // }
             }
             .text-login {
                 color: $color_azul_oscuro;
                 font-weight: bold;
             }
-            .texts-link{
+            .texts-link {
                 text-decoration: underline;
             }
             input[type="text"],
@@ -50,7 +47,7 @@ body#bo_login {
                 text-align: center;
                 border: 2px solid #3498db;
                 padding: 10px 10px;
-                width: 250px;
+                width: 50%;
                 outline: none;
                 border-radius: 24px;
                 transition: 0.25s;
@@ -60,7 +57,6 @@ body#bo_login {
                 justify-content: center;
                 margin-top: 4%;
                 margin-bottom: 4%;
-
                 input[type="submit"] {
                     border: 0;
                     background: $color_azul_oscuro;
@@ -78,13 +74,45 @@ body#bo_login {
                 }
             }
         }
-
         // animaciones cuando se pasa el cursor por los botones e inputs
         .form-login input[type="text"]:hover,
         .form-login input[type="password"]:hover,
         .form-login input[type="submit"]:hover {
             box-shadow: 0 4px 16px $color_gris_bordes;
             transition: all 0.2s ease;
+        }
+    }
+    @media only screen and (orientation: landscape) {
+        div.alingLeft {
+            width: 50%;
+            float: left;
+        }
+        div.alingRigth {
+            width: 50%;
+            float: right;
+            form {
+                margin-top: 2em;
+            }
+        }
+        .form-login {
+            .container-logo {
+                .logo-img {
+                    width: 100%;
+                    margin-left: 2em;
+                    margin-top: 3em;
+                }
+            }
+        }
+    }
+    @media only screen and (orientation: portrait) {
+        .form-login {
+            .container-logo {
+                .logo-img {
+                    width: 72%;
+                    margin-top: 6%;
+                    // max-width: 14em;
+                }
+            }
         }
     }
     // Para volver el programa responsive
