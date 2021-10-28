@@ -21,12 +21,18 @@ body#create_account {
             .container-logo {
                 padding-bottom: 5%;
                 .logo-img {
-                    width: 100%;
+                    width: 72%;
+                    margin-top: 6%;
                 }
             }
             .text-create-account {
-                color: $color_azul_oscuro;
+                color: $color_rosa;
                 font-weight: bold;
+                text-decoration: $color_azul_oscuro underline;
+            }
+            .text-start{
+                color: $color_azul_oscuro;
+                text-decoration:  underline;
             }
             input[type="text"],
             input[type="password"] {
@@ -43,21 +49,26 @@ body#create_account {
                 border-radius: 24px;
                 transition: 0.25s;
             }
-            input[type="submit"] {
-                border: 0;
-                background: $color_azul_oscuro;
+            .container-button {
                 display: flex;
-                text-align: center;
-                outline: none;
-                color: white;
-                border-radius: 24px;
-                transition: 0.25s;
-                cursor: pointer;
-                height: auto;
-                width: 1%;
-                box-shadow: 1px 2px 6px #332f2f;
-                margin: 20% 16% 0% 30%;
-                padding: 8px 87px 6px 29px;
+                justify-content: center;
+                margin-top: 4%;
+                margin-bottom: 4%;
+                input[type="submit"] {
+                    border: 0;
+                    background: $color_azul_oscuro;
+                    display: flex;
+                    text-align: center;
+                    outline: none;
+                    color: white;
+                    border-radius: 24px;
+                    transition: 0.25s;
+                    cursor: pointer;
+                    height: auto;
+                    width: 1%;
+                    box-shadow: 1px 2px 6px #332f2f;
+                    padding: 8px 87px 6px 29px;
+                }
             }
         }
 
