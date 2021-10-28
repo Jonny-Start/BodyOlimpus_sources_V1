@@ -10,14 +10,12 @@ body#bo_myaccount {
     text-align: center;
     transition: 0.25s;
     justify-content: center;
-
     // div que contiene el form del gender
     .card {
         margin-bottom: 20px;
         border: none;
         background-color: transparent;
-
-        h4{
+        h4 {
             color: $color_azul_oscuro;
             font-weight: bold;
             margin-top: 5%;
@@ -31,12 +29,10 @@ body#bo_myaccount {
             padding: 0;
             margin-top: 15%;
             margin-top: 15%;
-
             .links {
                 display: flex;
                 width: 100%;
                 justify-content: center;
-
                 li {
                     background: #f9f4c4;
                     text-decoration: none;
@@ -52,12 +48,10 @@ body#bo_myaccount {
                     margin-bottom: 10%;
                     padding-top: 6%;
                     box-shadow: 3px 14px 27px $color_gris_bordes;
-
                     a {
                         text-decoration: none;
                         position: relative;
                         left: 8%;
-
                         img {
                             max-width: 50%;
                             position: relative;
@@ -76,29 +70,16 @@ body#bo_myaccount {
             }
         }
         //  Botones de flecha hacia atrás y continuar
-
         #button-logout,
         #button-next {
-            border: 0;
+            border-radius: 25px;
+            color: wheat;
             background: $color_azul_oscuro;
-            display: flex;
-            text-align: center;
-            outline: none;
-            color: white;
-            border-radius: 24px;
-            transition: 0.25s;
-            cursor: pointer;
-            height: auto;
-            width: 1%;
-            box-shadow: 1px 2px 6px #332f2f;
+            padding: 0.5em;
         }
         #container-button-logout {
             display: flex;
             justify-content: flex-end;
-
-            #button-logout {
-                padding: 12px 25px 12px 14px;
-            }
         }
         #container-button {
             display: flex;
