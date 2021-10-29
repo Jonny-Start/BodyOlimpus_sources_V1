@@ -70,8 +70,7 @@ body#bo_myaccount {
             }
         }
         //  Botones de flecha hacia atrás y continuar
-        #button-logout,
-        #button-next {
+        #button-logout {
             border-radius: 25px;
             color: wheat;
             background: $color_azul_oscuro;
@@ -81,27 +80,13 @@ body#bo_myaccount {
             display: flex;
             justify-content: flex-end;
         }
-        #container-button {
-            display: flex;
-            justify-content: center;
-            margin-top: 4%;
-            margin-bottom: 4%;
-            #button-next {
-                padding: 8px 87px 6px 13px;
-            }
-        }
+       
         // animaciones cuando se pasa el cursor por los botones
         li:hover,
-        #button-logout:hover,
-        #button-next:hover {
+        #button-logout:hover {
             box-shadow: 0 4px 16px $color_hover_botones;
             transition: all 0.2s ease;
         }
     }
-    // Para volver el programa responsive
-    @media (max-width: 768px) {
-        .box {
-            left: 0%;
-        }
-    }
+
 }

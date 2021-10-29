@@ -10,6 +10,7 @@ body#bo_place {
     text-align: center;
     transition: 0.25s;
     justify-content: center;
+    display: flex;
 
     // div que contiene el form del gender
     .card {
@@ -33,7 +34,7 @@ body#bo_place {
             color: white;
 
             li {
-                margin-top: 30%;
+                margin-top: 15%;
                 text-decoration: none;
                 list-style: none;
                 box-shadow: none;
@@ -70,8 +71,8 @@ body#bo_place {
             }
         }
         //  Botones de flecha hacia atrás y continuar
-        .button-back,
-        .button-next {
+        #button-back,
+        #button-next {
             border: 0;
             background: $color_azul_oscuro;
             display: flex;
@@ -85,25 +86,27 @@ body#bo_place {
             width: 1%;
             box-shadow: 1px 2px 6px #332f2f;
         }
-        .button-back {
+        #button-back {
             padding: 8px 24px 8px 10px;
         }
-        .button-next {
-            margin: 65px 27px 17px 77px;
-            padding: 8px 87px 6px 13px;
+        #container-button {
+            display: flex;
+            justify-content: center;
+            margin-top: 4%;
+            margin-bottom: 4%;
+            
+            #button-next {
+                padding: 8px 87px 6px 13px;
+            }
         }
         // animaciones cuando se pasa el cursor por los botones
         li:hover,
-        .button-back:hover,
-        .button-next:hover {
+        #button-back:hover,
+        #button-next:hover {
             box-shadow: 0 4px 16px $color_gris_bordes;
             transition: all 0.2s ease;
         }
     }
-    // Para volver el programa responsive
-    @media (max-width: 768px) {
-        .box {
-            left: 0%;
-        }
-    }
+  
+   
 }
