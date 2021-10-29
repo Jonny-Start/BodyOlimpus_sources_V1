@@ -1,27 +1,31 @@
-body#create_account {
+body#bo_create_account {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
-    background: $color_fondo;
-    width: 100%;
-    top: 50%;
-    left: 50%;
-    text-align: center;
-    transition: 0.25s;
+    display: flex;
     justify-content: center;
+    font-family: sans-serif;
+    background: linear-gradient(to right, #0d6aab, #29435c);
     // div que contiene el form del create account
     .card {
         margin-bottom: 20px;
         border: none;
+        border-radius: 2px;
         background-color: transparent;
         // diseño de los elementos que se encuentran dentro del form del create account
-        .form-create-account {
+        #form-create-account {
+            background: $color_fondo;
+            width: 100%;
+            top: 50%;
+            left: 50%;
+            text-align: center;
+            transition: 0.25s;
+            margin-top: 6%;
+            justify-content: center;
+            display: block;
+            border-radius: 16px;
             .container-logo {
                 padding-bottom: 5%;
-                .logo-img {
-                    width: 72%;
-                    margin-top: 6%;
-                }
+                max-width: 23em;
             }
             .text-create-account {
                 color: $color_rosa;
@@ -42,10 +46,8 @@ body#create_account {
                 border: 2px solid #3498db;
                 padding: 10px 10px;
                 width: 250px;
-                outline: none;
                 color: #0d6aab;
                 border-radius: 24px;
-                transition: 0.25s;
             }
             .container-button {
                 display: flex;
