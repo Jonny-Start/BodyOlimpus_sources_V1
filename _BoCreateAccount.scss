@@ -56,9 +56,9 @@ body#bo_create_account {
             }
         }
         // animaciones cuando se pasa el cursor por los botones e inputs
-        .form-create-account input[type="text"]:hover,
-        .form-create-account input[type="password"]:hover,
-        .form-create-account input[type="submit"]:hover {
+        #form-create-account input[type="text"]:hover,
+        #form-create-account input[type="password"]:hover,
+        #form-create-account input[type="submit"]:hover {
             box-shadow: 0 4px 16px $color_hover_botones;
             transition: all 0.2s ease;
         }
@@ -87,12 +87,10 @@ body#bo_create_account {
             justify-content: center;
             margin-top: 5%;
         }
-        .form-login {
+        #form-create-account {
             .container-logo {
                 .logo-img {
                     width: 100%;
-                    margin-left: 2em;
-                    margin-top: 3em;
                 }
             }
         }

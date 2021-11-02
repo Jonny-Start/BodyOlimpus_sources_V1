@@ -1,9 +1,4 @@
 body#bo_login {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    font-family: sans-serif;
     background: linear-gradient(to right, #0d6aab, #29435c);
     // div que contiene el form del login
     .card {
@@ -12,70 +7,61 @@ body#bo_login {
         border-radius: 2px;
         background-color: transparent;
         // diseño de los elementos que se encuentran dentro del form del login
-        .form-login {
+        #form-login {
             background: $color_fondo;
             width: 100%;
-            top: 50%;
-            left: 50%;
             text-align: center;
-            transition: 0.25s;
-            margin-top: 6%;
-            justify-content: center;
-            display: block;
             border-radius: 16px;
             .container-logo {
-                padding-bottom: 5%;
-                max-width: 23em;
-                // .logo-img {
-                //     width: 72%;
-                //     margin-top: 6%;
-                // }
+                padding: 1em;
+                .logo-img {
+                    max-width: 30em;
+                    width: 100%;
+                }
             }
             .text-login {
-                color: $color_azul_oscuro;
+                color: $color_rosa;
                 font-weight: bold;
             }
-            .texts-link {
-                text-decoration: underline;
+            .text-start {
+                color: $color_azul_oscuro;
+            }
+            #text-link{
+                text-decoration: $color_azul_oscuro underline;
             }
             input[type="text"],
             input[type="password"] {
-                border: 0;
                 background: none;
                 display: block;
                 margin: 20px auto;
                 text-align: center;
                 border: 2px solid #3498db;
-                padding: 10px 10px;
                 width: 50%;
-                border-radius: 24px;
+                min-height: 3em;
+                color: #0d6aab;
+                border-radius: 25px;
             }
             .container-button {
-                display: flex;
-                justify-content: center;
-                margin-top: 4%;
-                margin-bottom: 4%;
                 input[type="submit"] {
                     border: 0;
                     background: $color_azul_oscuro;
-                    display: flex;
                     text-align: center;
                     color: white;
-                    border-radius: 24px;
-                    transition: 0.25s;
+                    border-radius: 25px;
                     cursor: pointer;
-                    height: auto;
-                    width: 1%;
+                    min-height: 3em;
+                    width: 30%;
                     box-shadow: 1px 2px 6px #332f2f;
-                    padding: 8px 87px 6px 29px;
+                    margin-top: 2em;
+                    margin-bottom: 2em;
                 }
             }
         }
         // animaciones cuando se pasa el cursor por los botones e inputs
-        .form-login input[type="text"]:hover,
-        .form-login input[type="password"]:hover,
-        .form-login input[type="submit"]:hover {
-            box-shadow: 0 4px 16px $color_gris_bordes;
+        #form-login input[type="text"]:hover,
+        #form-login input[type="password"]:hover,
+        #form-login input[type="submit"]:hover {
+            box-shadow: 0 4px 16px $color_hover_botones;
             transition: all 0.2s ease;
         }
     }
@@ -83,6 +69,13 @@ body#bo_login {
         div.alingLeft {
             width: 50%;
             float: left;
+            //________________________
+            background-color: rebeccapurple;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 15px 0px 0px 15px;
+            padding: 1em;
         }
         div.alingRigth {
             width: 50%;
@@ -91,7 +84,12 @@ body#bo_login {
                 margin-top: 2em;
             }
         }
-        .form-login {
+        div#form-login {
+            display: flex;
+            justify-content: center;
+            margin-top: 5%;
+
+          #form-login {
             .container-logo {
                 .logo-img {
                     width: 100%;
@@ -100,16 +98,11 @@ body#bo_login {
                 }
             }
         }
+        }
     }
     @media only screen and (orientation: portrait) {
-        .form-login {
-            .container-logo {
-                .logo-img {
-                    width: 72%;
-                    margin-top: 6%;
-                    // max-width: 14em;
-                }
-            }
+        div#form-login{
+            margin-top: 15%;
         }
     }
 

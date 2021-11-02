@@ -1,0 +1,31 @@
+
+    footer {
+        div#bo_inner_footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            display: block;
+            z-index: 100;
+        }
+        #menu-footer {
+            height: 4em;
+            background-color: #2cd2da;
+            padding-top: 0.7em;
+            display: flex;
+            padding-left: 0.5em;
+            padding-right: 0.5em;
+        }
+        .column {
+            float: left;
+            width: 25%;
+            background-color: #2cd2da;
+            text-align: center;
+        }
+
+        img {
+            width: 3em;
+            height: initial;
+        }
+    }
+
