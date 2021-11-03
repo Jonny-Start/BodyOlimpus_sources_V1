@@ -1,61 +1,84 @@
 body#bo_gender {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
     background: $color_fondo;
-    width: 100%;
     padding: 40px;
-    top: 50%;
-    left: 50%;
     text-align: center;
-    transition: 0.25s;
-    justify-content: center;
-    display: flex;
-    .container {
-        display: flex;
-        flex-wrap: wrap;
+    -ms-flex-pack: center;
+    display: -ms-flexbox;
+
+    .card {
+        border: none;
+        background-color: transparent;
+        h5 {
+            color: $color_azul_oscuro;
+            font-weight: bold;
+            // margin-top: 10%;
+            // margin-bottom: 10%;
+        }
+        ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 0;
+
+            li {
+                list-style: none;
+                align-items: center;
+                border-radius: 27px;
+                margin-bottom: 10%;
+                padding-top: 6%;
+                // width: 50%;
+            }
+        }
+        input[type="submit"] {
+            border: 0;
+            background: $color_azul_oscuro;
+            text-align: center;
+            color: white;
+            border-radius: 25px;
+            cursor: pointer;
+            min-height: 3em;
+            width: 30%;
+            box-shadow: 1px 2px 6px #332f2f;
+            /* margin-top: 2em; */
+            margin-bottom: 6em;
+        }
     }
-    .container .option_item {
-        display: block;
-        position: relative;
-        width: 175px;
-        height: 175px;
-        margin: 10px;
+    .option_item {
+        .checkbox {
+            position: absolute;
+        }
+        .option_inner {
+            width: 13em;
+            background: $color_fondo;
+            border-radius: 18px;
+            text-align: center;
+            cursor: pointer;
+            color: #585c68;
+            border: 5px solid transparent;
+            box-shadow: 3px 14px 27px $color_gris_bordes;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            .icon {
+                margin-bottom: 10px;
+                .fas {
+                    font-size: 7em;
+                }
+            }
+            .name {
+                user-select: none;
+                font-weight: bold;
+            }
+        }
     }
-    .container .option_item .checkbox {
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 1;
-        opacity: 0;
-    }
-    .option_item .option_inner {
-        width: 100%;
-        height: 100%;
-        background: #fff;
-        border-radius: 5px;
-        text-align: center;
-        padding: 58px 40px;
-        cursor: pointer;
-        color: #585c68;
-        display: block;
-        border: 5px solid transparent;
-        position: relative;
-    }
-    .option_item .option_inner .icon {
-        margin-bottom: 10px;
-    }
-    .option_item .option_inner .icon .fab {
-        font-size: 32px;
-    }
-    .option_item .option_inner .name {
-        user-select: none;
-    }
-    .option_item .checkbox:checked~.option_inner.femenino {
+    .option_item .checkbox:checked ~ .option_inner.femenino {
         border-color: #de2ccb;
         color: #de2ccb;
     }
-    .option_item .checkbox:checked~.option_inner.masculino {
+    .option_item .checkbox:checked ~ .option_inner.masculino {
         border-color: #0d6aab;
         color: #0d6aab;
     }
@@ -78,7 +101,7 @@ body#bo_gender {
         border-color: transparent transparent #fff #fff;
         transform: rotate(-45deg);
     }
-    .option_item .checkbox:checked~.option_inner .tickmark {
+    .option_item .checkbox:checked ~ .option_inner .tickmark {
         display: block;
     }
     .option_item .option_inner.femenino .tickmark {
@@ -87,96 +110,35 @@ body#bo_gender {
     .option_item .option_inner.masculino .tickmark {
         border-color: #0d6aab transparent transparent #0d6aab;
     }
-    // // div que contiene el form del gender
-    // .card {
-    //     margin-bottom: 20px;
-    //     border: none;
-    //     background-color: transparent;
-    //     h5,
-    //     h6 {
-    //         color: $color_azul_oscuro;
-    //         font-weight: bold;
-    //     }
-    //     h6 {
-    //         margin-top: 10%;
-    //         margin-bottom: 10%;
-    //     }
-    //     // ul que contiene los dos botones de femenino y masculino con los demás objetos dentro
-    //     ul {
-    //         list-style: none;
-    //         display: block;
-    //         color: white;
-    //         li {
-    //             margin-top: 15%;
-    //             text-decoration: none;
-    //             list-style: none;
-    //             box-shadow: none;
-    //             background-color: transparent;
-    //             display: block;
-    //             justify-content: center;
-    //             align-items: center;
-    //             border: 2px solid $color_fondo;
-    //             border-radius: 27px;
-    //             position: relative;
-    //             right: 10%;
-    //             margin-bottom: 10%;
-    //             padding-top: 6%;
-    //             box-shadow: 3px 14px 27px $color_gris_bordes;
-    //             a {
-    //                 text-decoration: none;
-    //                 position: relative;
-    //                 left: 8%;
-    //                 img {
-    //                     max-width: 50%;
-    //                     position: relative;
-    //                     right: 9%;
-    //                 }
-    //                 label {
-    //                     color: $color_azul_oscuro;
-    //                     font-weight: bold;
-    //                     display: block;
-    //                     position: relative;
-    //                     right: 8%;
-    //                     margin-top: 4%;
-    //                 }
-    //             }
-    //         }
-    //     }
-    //     //  Botones de flecha hacia atrás y continuar
-    //     #button-back,
-    //     #button-next {
-    //         border: 0;
-    //         background: $color_azul_oscuro;
-    //         display: flex;
-    //         text-align: center;
-    //         outline: none;
-    //         color: white;
-    //         border-radius: 24px;
-    //         transition: 0.25s;
-    //         cursor: pointer;
-    //         height: auto;
-    //         width: 1%;
-    //         box-shadow: 1px 2px 6px #332f2f;
-    //     }
-    //     #button-back {
-    //         padding: 8px 24px 8px 10px;
-    //     }
-    //     #container-button {
-    //         display: flex;
-    //         justify-content: center;
-    //         margin-top: 4%;
-    //         margin-bottom: 4%;
-    //         #button-next {
-    //             padding: 8px 87px 6px 13px;
-    //         }
-    //     }
-    //     // animaciones cuando se pasa el cursor por los botones
-    //     li:hover,
-    //     #button-back:hover,
-    //     #button-next:hover {
-    //         box-shadow: 0 4px 16px $color_hover_botones;
-    //         transition: all 0.2s ease;
-    //     }
-    // }
+
+    //  Botones de flecha hacia atrás y continuar
+    #container-button {
+        display: flex;
+        justify-content: flex-end;
+        #button-next {
+            border: 0;
+            background: #0d6aab;
+            text-align: center;
+            color: white;
+            border-radius: 24px;
+            -webkit-transition: 0.25s;
+            transition: 0.25s;
+            cursor: pointer;
+            height: auto;
+            margin-bottom: 2em;
+            width: 27%;
+            -webkit-box-shadow: 1px 2px 6px #332f2f;
+            box-shadow: 1px 2px 6px #332f2f;
+        }
+    }
+
+    // animaciones cuando se pasa el cursor por los botones
+    .option_inner:hover,
+    #button-back:hover,
+    #button-next:hover {
+        box-shadow: 0 4px 16px $color_hover_botones;
+        transition: all 0.2s ease;
+    }
+
     // // Para volver el programa responsive
 }
