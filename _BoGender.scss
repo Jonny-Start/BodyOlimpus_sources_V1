@@ -4,7 +4,6 @@ body#bo_gender {
     text-align: center;
     -ms-flex-pack: center;
     display: -ms-flexbox;
-
     .card {
         border: none;
         background-color: transparent;
@@ -20,7 +19,6 @@ body#bo_gender {
             justify-content: space-evenly;
             align-items: center;
             padding: 0;
-
             li {
                 list-style: none;
                 align-items: center;
@@ -74,11 +72,11 @@ body#bo_gender {
             }
         }
     }
-    .option_item .checkbox:checked ~ .option_inner.femenino {
+    .option_item .checkbox:checked~.option_inner.femenino {
         border-color: #de2ccb;
         color: #de2ccb;
     }
-    .option_item .checkbox:checked ~ .option_inner.masculino {
+    .option_item .checkbox:checked~.option_inner.masculino {
         border-color: #0d6aab;
         color: #0d6aab;
     }
@@ -101,7 +99,7 @@ body#bo_gender {
         border-color: transparent transparent #fff #fff;
         transform: rotate(-45deg);
     }
-    .option_item .checkbox:checked ~ .option_inner .tickmark {
+    .option_item .checkbox:checked~.option_inner .tickmark {
         display: block;
     }
     .option_item .option_inner.femenino .tickmark {
@@ -110,7 +108,6 @@ body#bo_gender {
     .option_item .option_inner.masculino .tickmark {
         border-color: #0d6aab transparent transparent #0d6aab;
     }
-
     //  Botones de flecha hacia atrás y continuar
     #container-button {
         display: flex;
@@ -131,7 +128,6 @@ body#bo_gender {
             box-shadow: 1px 2px 6px #332f2f;
         }
     }
-
     // animaciones cuando se pasa el cursor por los botones
     .option_inner:hover,
     #button-back:hover,
@@ -139,6 +135,5 @@ body#bo_gender {
         box-shadow: 0 4px 16px $color_hover_botones;
         transition: all 0.2s ease;
     }
-
     // // Para volver el programa responsive
 }
