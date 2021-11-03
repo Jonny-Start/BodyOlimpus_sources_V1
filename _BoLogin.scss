@@ -26,7 +26,7 @@ body#bo_login {
             .text-start {
                 color: $color_azul_oscuro;
             }
-            #text-link{
+            #text-link {
                 text-decoration: $color_azul_oscuro underline;
             }
             input[type="text"],
@@ -88,22 +88,23 @@ body#bo_login {
             display: flex;
             justify-content: center;
             margin-top: 5%;
-
-          #form-login {
-            .container-logo {
-                .logo-img {
-                    width: 100%;
-                    margin-left: 2em;
-                    margin-top: 3em;
+            #form-login {
+                .container-logo {
+                    .logo-img {
+                        width: 100%;
+                        margin-left: 2em;
+                        margin-top: 3em;
+                    }
                 }
             }
         }
-        }
     }
     @media only screen and (orientation: portrait) {
-        div#form-login{
+        div#form-login {
             margin-top: 15%;
         }
     }
-
+    footer {
+        display: none;
+    }
 }

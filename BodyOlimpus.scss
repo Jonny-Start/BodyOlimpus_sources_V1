@@ -9,3 +9,23 @@ $color_hover_botones:rgb(44, 56, 61);
 @import "_BoGender";
 @import "_BoPlace";
 @import "_BoFooter";
+
+/**
+* Son estilos globales
+**/
+
+.hide {
+    display: none;
+}
+
+div#messagehelp {
+    position: absolute;
+    background-color: red;
+    left: 0;
+    bottom: 4em;
+    min-height: 5em;
+    width: 100%;
+    border-radius: 25px 25px 0px 0px;
+    padding: 3%;
+    text-align: center;
+}
