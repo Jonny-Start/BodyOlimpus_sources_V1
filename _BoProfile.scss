@@ -1,0 +1,24 @@
+body#bo_profile {
+    text-align: center;
+    div#container {
+        margin-top: 10vh;
+        form {
+            margin-bottom: 8em;
+        }
+        img {
+            max-width: 10em;
+            border-radius: 50%;
+            margin-bottom: 3vh;
+        }
+        li {
+            display: block;
+        }
+        input {
+            border: 0;
+            background-color: transparent;
+        }
+         :-ms-input-placeholder {
+            color: #0d6aab;
+        }
+    }
+}
