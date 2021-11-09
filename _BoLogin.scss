@@ -18,7 +18,12 @@ body#bo_login {
                     max-width: 30em;
                     width: 100%;
                 }
+                h4 {
+                    color: $color_azul_oscuro;
+                    font-weight: bold;
+                }
             }
+           
             .text-login {
                 color: $color_rosa;
                 font-weight: bold;
