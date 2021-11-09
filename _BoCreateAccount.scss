@@ -12,6 +12,17 @@ body#bo_create_account {
             width: 100%;
             text-align: center;
             border-radius: 16px;
+            #text-slogan {
+                color: #25acb9;
+                font-weight: bold;
+                font-size: 0.9em;
+                margin: 0;
+                position: relative;
+                bottom: 0.5em;
+            }
+            #text-title {
+                color: $color_azul_oscuro;
+            }
             .container-logo {
                 padding: 1em;
                 .logo-img {
