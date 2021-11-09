@@ -1,24 +1,55 @@
 body#bo_profile {
+    background: $color_fondo;
+    padding: 40px;
+    text-align: center;
+    -ms-flex-pack: center;
+    display: -ms-flexbox;
     text-align: center;
     div#container {
         margin-top: 10vh;
-        form {
-            margin-bottom: 8em;
-        }
-        img {
-            max-width: 10em;
-            border-radius: 50%;
-            margin-bottom: 3vh;
-        }
-        li {
-            display: block;
-        }
-        input {
-            border: 0;
+        .card {
+            border: none;
             background-color: transparent;
-        }
-         :-ms-input-placeholder {
-            color: #0d6aab;
+
+            h3 {
+                color: $color_azul_oscuro;
+                font-weight: bold;
+            }
+            img {
+                max-width: 10em;
+                border-radius: 50%;
+                margin-bottom: 2vh;
+            }
+            ul {
+                display: flex;
+                position: relative;
+                right: 1em;
+                flex-direction: column;
+
+                li {
+                    display: block;
+                    label {
+                        p {
+                            color: #970b94;
+                            font-weight: bold;
+                            font-size: 1.2em;
+                            margin: 0;
+                            float: left;
+                        }
+                    }
+                }
+            }
+            input {
+                border: 0;
+                background-color: transparent;
+                width: 19em;
+                height: 1.5em;
+                font-size: 1.1em;
+                color: $color_azul_oscuro;
+            }
+            :-ms-input-placeholder {
+                color: #0d6aab;
+            }
         }
     }
 }
