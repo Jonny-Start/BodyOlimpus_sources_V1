@@ -1,98 +1,47 @@
 body#bo_settings {
     background: $color_fondo;
-    width: 100%;
     padding: 40px;
-    top: 50%;
-    left: 50%;
     text-align: center;
-    transition: 0.25s;
-    justify-content: center;
-    display: flex;
     .card {
-        margin-bottom: 20px;
+        margin-top: 5%;
         border: none;
-        border-radius: 2px;
         background-color: transparent;
         // diseño de los elementos que se encuentran dentro del form del login
         #form-settings {
             background: $color_fondo;
-            width: 100%;
-            text-align: center;
-            border-radius: 16px;
-            .container-logo {
-                padding: 1em;
-                .logo-img {
-                    max-width: 30em;
-                    width: 100%;
-                }
+            h3 {
+                color: $color_azul_oscuro;
+                font-weight: bold;
             }
             div#container-settings {
-                // margin-top: 20vh;
-                margin-left: 16vw;
-                width: 90%;
+                margin-top: 20vh;
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                justify-content: space-around;
                 a {
                     .content-settings {
-                        border-radius: 25px;
+                        margin-top: 2%;
+                        width: auto;
+                        height: auto;
+                        padding: 2%;
                         background-color: #adcaec;
-                        margin-bottom: 1.2em;
                         color: #0e6aad;
-                        padding: 0.3em;
-                        width: 73%;
+                        margin-bottom: 0.2em;
                         display: flex;
+                        flex-direction: column;
                         align-items: center;
-                        text-align: left;
-                        padding-left: 3em;
-                        position: relative;
-                        min-height: 3em;
-                        word-break: break-word;
+                        border-radius: 15px;
+                        justify-content: center;
                         img {
-                            position: absolute;
-                            left: 0.4em;
-                            bottom: 0.5em;
-                            width: 7%;
+                            max-width: 24%;
+                        }
+                        span {
+                            font-weight: bold;
                         }
                     }
                 }
             }
-        }
-    }
-    @media only screen and (orientation: landscape) {
-        div.alingLeft {
-            width: 50%;
-            float: left;
-            //________________________
-            background-color: rebeccapurple;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 15px 0px 0px 15px;
-            padding: 1em;
-        }
-        div.alingRigth {
-            width: 50%;
-            float: right;
-            form {
-                margin-top: 2em;
-            }
-        }
-        div#form-settings {
-            display: flex;
-            justify-content: center;
-            margin-top: 5%;
-            #form-settings {
-                .container-logo {
-                    .logo-img {
-                        width: 100%;
-                        margin-left: 2em;
-                        margin-top: 3em;
-                    }
-                }
-            }
-        }
-    }
-    @media only screen and (orientation: portrait) {
-        div#form-login {
-            margin-top: 15%;
         }
     }
 }
