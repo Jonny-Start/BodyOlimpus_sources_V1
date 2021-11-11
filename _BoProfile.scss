@@ -1,12 +1,12 @@
 body#bo_profile {
     background: $color_fondo;
-    padding: 40px;
+    padding: 20px;
     text-align: center;
     -ms-flex-pack: center;
     display: -ms-flexbox;
     text-align: center;
     div#container {
-        margin-top: 10vh;
+        margin-top: 1em;
         .card {
             border: none;
             background-color: transparent;
@@ -20,14 +20,12 @@ body#bo_profile {
                 border-radius: 50%;
                 margin-bottom: 2vh;
             }
-            ul {
+            #section {
                 display: flex;
-                position: relative;
-                right: 1em;
                 flex-direction: column;
 
-                li {
-                    display: block;
+                .dates {
+                    display: flex;
                     label {
                         p {
                             color: #970b94;
@@ -36,19 +34,35 @@ body#bo_profile {
                             margin: 0;
                             float: left;
                         }
+                        input#email{
+                            width: 14em;
+                        }
                     }
                 }
             }
             input {
                 border: 0;
                 background-color: transparent;
-                width: 19em;
+                width: 10em;
                 height: 1.5em;
                 font-size: 1.1em;
                 color: $color_azul_oscuro;
+                font-weight: bold;
             }
             :-ms-input-placeholder {
                 color: #0d6aab;
+            }
+            input[type="submit"] {
+                border: 0;
+                background: $color_azul_oscuro;
+                text-align: center;
+                color: white;
+                border-radius: 25px;
+                cursor: pointer;
+                min-height: 3em;
+                width: 30%;
+                box-shadow: 1px 2px 6px #332f2f;
+                margin-top: 1em;
             }
         }
     }
