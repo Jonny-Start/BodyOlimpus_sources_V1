@@ -1,0 +1,117 @@
+body#bo_create_account {
+    background: linear-gradient(to right, #0d6aab, #29435c);
+    // div que contiene el form del create account
+    .card {
+        margin-bottom: 20px;
+        border: none;
+        border-radius: 2px;
+        background-color: transparent;
+        // diseño de los elementos que se encuentran dentro del form del create account
+        #form-create-account {
+            background: $color_fondo;
+            width: 100%;
+            text-align: center;
+            border-radius: 16px;
+            #text-slogan {
+                color: #25acb9;
+                font-weight: bold;
+                font-size: 0.9em;
+                margin: 0;
+                position: relative;
+                bottom: 0.5em;
+            }
+            #text-title {
+                color: $color_azul_oscuro;
+            }
+            .container-logo {
+                padding: 1em;
+                .logo-img {
+                    max-width: 30em;
+                    width: 100%;
+                }
+            }
+            .text-create-account {
+                color: $color_rosa;
+                font-weight: bold;
+                text-decoration: $color_azul_oscuro underline;
+            }
+            .text-start {
+                color: $color_azul_oscuro;
+                text-decoration: underline;
+            }
+            input[type="text"],
+            input[type="password"] {
+                background: none;
+                display: block;
+                margin: 20px auto;
+                text-align: center;
+                border: 2px solid #3498db;
+                width: 50%;
+                min-height: 3em;
+                color: #0d6aab;
+                border-radius: 25px;
+            }
+            .container-button {
+                input[type="submit"] {
+                    border: 0;
+                    background: $color_azul_oscuro;
+                    text-align: center;
+                    color: white;
+                    border-radius: 25px;
+                    cursor: pointer;
+                    min-height: 3em;
+                    width: 30%;
+                    box-shadow: 1px 2px 6px #332f2f;
+                    margin-bottom: 2em;
+                }
+            }
+        }
+        // animaciones cuando se pasa el cursor por los botones e inputs
+        #form-create-account input[type="text"]:hover,
+        #form-create-account input[type="password"]:hover,
+        #form-create-account input[type="submit"]:hover {
+            box-shadow: 0 4px 16px $color_hover_botones;
+            transition: all 0.2s ease;
+        }
+    }
+    @media only screen and (orientation: landscape) {
+        div.alingLeft {
+            width: 50%;
+            float: left;
+            //________________________
+            background-color: rebeccapurple;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 15px 0px 0px 15px;
+            padding: 1em;
+        }
+        div.alingRigth {
+            width: 50%;
+            float: right;
+            form {
+                margin-top: 2em;
+            }
+        }
+        div#form-create-account {
+            display: flex;
+            justify-content: center;
+            margin-top: 5%;
+        }
+        #form-create-account {
+            .container-logo {
+                .logo-img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    @media only screen and (orientation: portrait) {
+        div#form-create-account {
+            margin-top: 15%;
+        }
+    }
+    footer {
+        display: none;
+    }
+}

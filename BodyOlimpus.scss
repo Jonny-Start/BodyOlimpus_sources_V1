@@ -1,2 +1,42 @@
-$color_fondo: black;
+$color_fondo: #dee2f4;
+$color_rosa: #de2ccb;
+$color_azul_oscuro: #0d6aab;
+$color_gris_bordes: #abb4c7;
+$color_hover_botones:rgb(44, 56, 61);
 @import "_BoMyAccount";
+@import "_BoLogin";
+@import "_BoCreateAccount";
+@import "_BoGender";
+@import "_BoPlace";
+@import "_BoFooter";
+@import "_BoSettings";
+@import "_BoNotifications";
+@import "_BoFeeding";
+@import "_BoExercise";
+@import "_BoGraphics";
+@import "_BoWeight";
+@import "_BoProfile";
+@import "_BoChangePassword";
+
+/**
+* Son estilos globales
+**/
+
+.hide {
+    display: none;
+}
+
+div#messagehelp {
+    background-color: #13aa98;
+    width: 100%;
+    position: fixed;
+    left: 0px;
+    bottom: 60px;
+    height: auto;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    color: white;
+    padding: 2em;
+    text-align: center;
+    z-index: 1;
+}

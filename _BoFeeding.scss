@@ -1,0 +1,47 @@
+body#bo_feeding {
+    background: $color_fondo;
+    padding: 40px;
+    text-align: center;
+    -ms-flex-pack: center;
+    display: -ms-flexbox;
+    // div que contiene el form del gender
+    .card {
+        border: none;
+        background-color: transparent;
+        h5 {
+            color: $color_azul_oscuro;
+            font-weight: bold;
+        }
+        div#tarjetas {
+            background-color: #dee2f4;
+            border-radius: 10px;
+            margin-top: 3em;
+            margin-bottom: 6em;
+            .links {
+                opacity: 60%;
+            }
+            div.elementos {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                background-image: url(https://media.istockphoto.com/vectors/vector-gym-pattern-gym-seamless-background-vector-id943758696?s=2048x2048);
+                background-size: cover;
+                border-radius: 15px;
+                margin-bottom: 1.5em;
+                min-height: 6em;
+                img {
+                    width: 35%;
+                    height: auto;
+                    border-radius: 10px;
+                }
+                p {
+                    margin: 0;
+                    width: 60%;
+                    color: #000000;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
