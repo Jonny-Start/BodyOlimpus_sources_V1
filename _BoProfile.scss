@@ -10,46 +10,47 @@ body#bo_profile {
         .card {
             border: none;
             background-color: transparent;
-
+            i {
+                color: rgb(163, 105, 105);
+            }
+            div#tarjetHead {
+                background-color: cyan;
+                padding: 2em;
+                position: fixed;
+                left: 0;
+                width: 100%;
+                top: 0;
+                padding-top: 4em;
+                img {
+                    max-width: 10em;
+                    border-radius: 50%;
+                    margin-bottom: 2vh;
+                }
+            }
             h3 {
                 color: $color_azul_oscuro;
                 font-weight: bold;
             }
-            img {
-                max-width: 10em;
-                border-radius: 50%;
-                margin-bottom: 2vh;
-            }
             #section {
-                display: flex;
-                flex-direction: column;
-
-                .dates {
-                    display: flex;
-                    label {
-                        p {
-                            color: #970b94;
-                            font-weight: bold;
-                            font-size: 1.2em;
-                            margin: 0;
-                            float: left;
-                        }
-                        input#email{
-                            width: 14em;
-                        }
-                    }
+                margin-top: 20em;
+                label {
+                    color: #970b94;
+                    font-weight: bold;
+                    font-size: 1.2em;
+                    margin: 0;
+                    float: left;
                 }
             }
             input {
                 border: 0;
                 background-color: transparent;
-                width: 10em;
+                width: 50%;
                 height: 1.5em;
                 font-size: 1.1em;
                 color: $color_azul_oscuro;
                 font-weight: bold;
             }
-            :-ms-input-placeholder {
+             :-ms-input-placeholder {
                 color: #0d6aab;
             }
             input[type="submit"] {
@@ -60,7 +61,7 @@ body#bo_profile {
                 border-radius: 25px;
                 cursor: pointer;
                 min-height: 3em;
-                width: 30%;
+                width: 40%;
                 box-shadow: 1px 2px 6px #332f2f;
                 margin-top: 1em;
             }

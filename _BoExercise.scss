@@ -13,7 +13,7 @@ body#bo_exercise {
             font-weight: bold;
         }
         div#tarjetas {
-            background-color: #ffeaec;
+            background-color: #dee2f4;
             border-radius: 10px;
             margin-top: 3em;
             margin-bottom: 6em;
@@ -21,21 +21,15 @@ body#bo_exercise {
                 opacity: 60%;
             }
             div.elementos {
-                padding-left: 5%;
-                padding-top: 2%;
-                padding-bottom: 2%;
-                padding-right: 1.5em;
-                margin-bottom: 0.2em;
                 display: flex;
-                flex-wrap: wrap;
-                align-content: space-around;
-                flex-direction: column;
-                justify-content: space-evenly;
+                flex-direction: row;
+                justify-content: center;
                 align-items: center;
                 background-image: url(https://media.istockphoto.com/vectors/vector-gym-pattern-gym-seamless-background-vector-id943758696?s=2048x2048);
                 background-size: cover;
                 border-radius: 15px;
-
+                margin-bottom: 1.5em;
+                min-height: 6em;
                 img {
                     width: 35%;
                     height: auto;
@@ -46,7 +40,6 @@ body#bo_exercise {
                     width: 60%;
                     color: #000000;
                     font-weight: bold;
-                    margin-top: 1em;
                 }
             }
         }

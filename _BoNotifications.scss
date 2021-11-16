@@ -1,5 +1,5 @@
 body {
-    #bo_Notifications {
+    #bo_Notifications.success {
         background-color: #9ce07c;
         color: #13501a;
         font-size: 1em;
@@ -10,6 +10,21 @@ body {
         right: 2%;
         top: 2%;
         border: 2px solid #13501a;
+        width: 50%;
+        border-radius: 10px;
+        padding: 5px;
+    }
+    #bo_Notifications.error {
+        background-color: red;
+        color: white;
+        font-size: 1em;
+        position: absolute;
+        z-index: 2;
+        display: inline-flex;
+        margin: 0;
+        right: 2%;
+        top: 2%;
+        border: 2px solid red;
         width: 50%;
         border-radius: 10px;
         padding: 5px;
