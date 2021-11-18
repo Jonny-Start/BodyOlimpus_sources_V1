@@ -12,6 +12,7 @@ body#bo_profile {
             background-color: transparent;
             i {
                 color: rgb(163, 105, 105);
+                // float: left;
             }
             div#tarjetHead {
                 background-color: cyan;
@@ -33,24 +34,39 @@ body#bo_profile {
             }
             #section {
                 margin-top: 20em;
+                    display: flex;
+                    padding: 0;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    flex-direction: column;
+                    align-content: center;
+
                 label {
                     color: #970b94;
                     font-weight: bold;
                     font-size: 1.2em;
                     margin: 0;
-                    float: left;
+                    // float: left;
                 }
             }
             input {
                 border: 0;
                 background-color: transparent;
-                width: 50%;
+                width: 7em;
                 height: 1.5em;
                 font-size: 1.1em;
                 color: $color_azul_oscuro;
                 font-weight: bold;
+               
             }
-             :-ms-input-placeholder {
+            #actual_weight{
+                width: 2em;
+            }
+            input[type="date"]::-webkit-calendar-picker-indicator {
+                background: none;
+                width: 8em;
+              }
+            :-ms-input-placeholder {
                 color: #0d6aab;
             }
             input[type="submit"] {

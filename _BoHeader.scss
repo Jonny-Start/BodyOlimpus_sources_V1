@@ -1,0 +1,15 @@
+header {
+    div#bo_header {
+        position: fixed;
+        left: 0;
+        width: 100%;
+        top: 0;
+    }
+    #container-header {
+        height: 5em;
+        background-color: #21a9af;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
