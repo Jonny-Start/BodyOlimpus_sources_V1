@@ -8,11 +8,6 @@ body#bo_settings {
         background-color: transparent;
         // diseño de los elementos que se encuentran dentro del form del login
         #form-settings {
-            background: $color_fondo;
-            h3 {
-                color: $color_azul_oscuro;
-                font-weight: bold;
-            }
             div#container-settings {
                 margin-top: 20vh;
                 display: flex;
