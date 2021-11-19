@@ -1,12 +1,11 @@
 body#bo_weight {
     background: $color_fondo;
-    padding: 40px;
+    padding: 10px;
     text-align: center;
     .card {
         margin-bottom: 20px;
         border: none;
         background-color: transparent;
-
         #form-weight {
             div#content-weight {
                 display: flex;

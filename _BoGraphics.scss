@@ -1,11 +1,20 @@
 body#bo_graphics {
     background: $color_fondo;
-    padding: 40px;
+    padding: 10px;
     text-align: center;
     // div que contiene el form del gender
     .card {
         border: none;
         background-color: transparent;
         margin-top: 15vh;
+    }
+    div#tarjetDataHeader {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    canvas {
+        margin-top: 3em;
     }
 }

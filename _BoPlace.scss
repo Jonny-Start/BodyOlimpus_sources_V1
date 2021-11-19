@@ -1,6 +1,6 @@
 body#bo_place {
     background: $color_fondo;
-    padding: 40px;
+    padding: 10px;
     text-align: center;
     -ms-flex-pack: center;
     display: -ms-flexbox;
@@ -26,10 +26,8 @@ body#bo_place {
                 border-radius: 27px;
                 margin-bottom: 10%;
                 padding-top: 6%;
-                
             }
         }
-        
         input[type="submit"] {
             border: 0;
             background: $color_azul_oscuro;
@@ -136,6 +134,4 @@ body#bo_place {
         box-shadow: 0 4px 16px $color_hover_botones;
         transition: all 0.2s ease;
     }
-   
 }
-

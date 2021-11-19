@@ -1,6 +1,9 @@
 body#bo_login {
     background: linear-gradient(to right, #0d6aab, #29435c);
     // div que contiene el form del login
+    div#container-header {
+        display: none;
+    }
     .card {
         margin-bottom: 20px;
         border: none;
@@ -23,7 +26,6 @@ body#bo_login {
                     font-weight: bold;
                 }
             }
-           
             .text-login {
                 color: $color_rosa;
                 font-weight: bold;

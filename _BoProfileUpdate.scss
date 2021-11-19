@@ -1,4 +1,4 @@
-body#bo_profile {
+body#bo_profileUpdate {
     background: $color_fondo;
     padding: 10px;
     text-align: center;
@@ -31,21 +31,20 @@ body#bo_profile {
             #section {
                 margin-top: 34vh;
                 padding: 0;
-                // display: flex;
-                // flex-direction: column;
-                // align-content: flex-start;
-                // align-items: flex-start;
-                // justify-content: center;
-                div.DataUser {
-                    color: $color_azul_oscuro;
-                    font-weight: bold;
-                    font-size: 1.5rem;
-                    span {
-                        color: #007bff;
-                        font-weight: 100;
-                        font-size: 1.4rem
-                    }
-                }
+                margin-bottom: 5em;
+            }
+            label {
+                color: $color_azul_oscuro;
+                font-weight: bold;
+            }
+            input {
+                border-radius: 10px;
+                color: $color_azul_oscuro;
+                font-weight: bold;
+            }
+            input[type="date"]::-webkit-calendar-picker-indicator {
+                background: none;
+                width: 8em;
             }
         }
     }

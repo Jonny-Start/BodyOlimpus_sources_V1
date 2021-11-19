@@ -1,6 +1,9 @@
 body#bo_create_account {
     background: linear-gradient(to right, #0d6aab, #29435c);
     // div que contiene el form del create account
+    div#container-header {
+        display: none;
+    }
     .card {
         margin-bottom: 20px;
         border: none;

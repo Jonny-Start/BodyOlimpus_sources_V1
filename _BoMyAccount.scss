@@ -1,13 +1,12 @@
 body#bo_myaccount {
     background: $color_fondo;
-    padding: 40px;
+    padding: 10px;
     text-align: center;
     // div que contiene el form del gender
     .card {
         margin-bottom: 20px;
         border: none;
         background-color: transparent;
-
         #form-myaccount {
             div#container-myaccount {
                 margin-top: 20vh;
