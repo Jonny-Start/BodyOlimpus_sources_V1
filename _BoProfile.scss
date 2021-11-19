@@ -15,13 +15,11 @@ body#bo_profile {
                 // float: left;
             }
             div#tarjetHead {
-                background-color: cyan;
-                padding: 2em;
                 position: fixed;
                 left: 0;
                 width: 100%;
                 top: 0;
-                padding-top: 4em;
+                margin-top: 7em;
                 img {
                     max-width: 10em;
                     border-radius: 50%;
@@ -33,13 +31,13 @@ body#bo_profile {
                 font-weight: bold;
             }
             #section {
-                margin-top: 20em;
-                    display: flex;
-                    padding: 0;
-                    justify-content: center;
-                    flex-wrap: wrap;
-                    flex-direction: column;
-                    align-content: center;
+                margin-top: 17em;
+                display: flex;
+                padding: 0;
+                justify-content: center;
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-content: center;
 
                 label {
                     color: #970b94;
@@ -57,15 +55,14 @@ body#bo_profile {
                 font-size: 1.1em;
                 color: $color_azul_oscuro;
                 font-weight: bold;
-               
             }
-            #actual_weight{
+            #actual_weight {
                 width: 2em;
             }
             input[type="date"]::-webkit-calendar-picker-indicator {
                 background: none;
                 width: 8em;
-              }
+            }
             :-ms-input-placeholder {
                 color: #0d6aab;
             }
