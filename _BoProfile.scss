@@ -5,8 +5,14 @@ body#bo_profile {
     -ms-flex-pack: center;
     display: -ms-flexbox;
     text-align: center;
+    #container-header {
+        display: none;
+    }
     .textHeader {
         z-index: 90;
+    }
+    button#submitProfile {
+        margin-bottom: 4em;
     }
     div#container {
         margin-top: 1em;

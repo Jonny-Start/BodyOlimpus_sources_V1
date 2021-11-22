@@ -19,6 +19,7 @@ $color_hover_botones:rgb(44, 56, 61);
 @import "_BoProfileUpdate";
 @import "_BoChangePassword";
 @import "_BoHeader";
+@import "_BoPasswordEmail";
 
 /**
 * Son estilos globales
@@ -63,4 +64,9 @@ div#messagehelp {
 h4 {
     color: white;
     font-weight: bold;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    position: fixed;
+    z-index: 91;
 }

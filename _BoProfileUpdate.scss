@@ -5,6 +5,9 @@ body#bo_profileUpdate {
     -ms-flex-pack: center;
     display: -ms-flexbox;
     text-align: center;
+    #container-header {
+        display: none;
+    }
     .textHeader {
         z-index: 90;
     }
