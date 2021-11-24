@@ -26,23 +26,21 @@ body#bo_exercise {
                 flex-direction: row;
                 justify-content: center;
                 align-items: center;
-                background-image: url(https://media.istockphoto.com/vectors/vector-gym-pattern-gym-seamless-background-vector-id943758696?s=2048x2048);
                 background-size: cover;
                 border-radius: 15px;
                 margin-bottom: 1.5em;
                 min-height: 6em;
-                box-shadow: 3px 2px 5px 3px $color_gris_bordes;
-                img {
-                    width: 35%;
-                    height: auto;
-                    border-radius: 10px;
-                }
+                box-shadow: 3px 2px 5px 3px $color_gris_bordes;             
                 p {
                     margin: 0;
                     width: 60%;
                     color: #000000;
                     font-weight: bold;
                 }
+                
+            }
+            #card1{
+                background-image: url(././views/img/exercise1.jpeg);
             }
         }
     }
