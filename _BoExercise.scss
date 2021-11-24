@@ -30,17 +30,16 @@ body#bo_exercise {
                 border-radius: 15px;
                 margin-bottom: 1.5em;
                 min-height: 6em;
-                box-shadow: 3px 2px 5px 3px $color_gris_bordes;             
+                box-shadow: 3px 2px 5px 3px $color_gris_bordes;
                 p {
                     margin: 0;
                     width: 60%;
                     color: #000000;
                     font-weight: bold;
                 }
-                
             }
-            #card1{
-                background-image: url(././views/img/exercise1.jpeg);
+            #card1 {
+                background-image: url(./../img/exercise1.jpeg);
             }
         }
     }
