@@ -34,54 +34,55 @@ body#bo_feeding {
                 p {
                     margin: 0;
                     width: 60%;
-                    color: #000000;
+                    color: $color_azul_oscuro;
                     font-weight: bold;
+                    font-size: 1.5rem;
                 }
             }
             #card1 {
-                background-image: url(./../img/food1.png);
+                background-image: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ),url(./../img/food1.png);
             }
             #card2 {
-                background-image: url(./../img/food13.png);
+                background-image: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ),url(./../img/food13.png);
             }
             #card3 {
-                background-image: url(./../img/food3.png);
+                background-image: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ),url(./../img/food3.png);
             }
             #card4 {
-                background-image: url(./../img/food4.png);
+                background-image: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ),url(./../img/food4.png);
             }
             #card5 {
-                background-image: url(./../img/food5.png);
+                background-image: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ),url(./../img/food5.png);
             }
             #card6 {
-                background-image: url(./../img/food6.png);
+                background-image: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ),url(./../img/food6.png);
             }
             #card7 {
-                background-image: url(./../img/food7.png);
+                background-image: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ),url(./../img/food7.png);
             }
             #card8 {
-                background-image: url(./../img/food8.png);
+                background-image: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ),url(./../img/food8.png);
             }
             #card9 {
-                background-image: url(./../img/food9.png);
+                background-image: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ),url(./../img/food9.png);
             }
             #card10 {
-                background-image: url(./../img/food10.png);
+                background-image: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ),url(./../img/food10.png);
             }
             #card11 {
-                background-image: url(./../img/food11.png);
+                background-image: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ),url(./../img/food11.png);
             }
             #card12 {
-                background-image: url(./../img/food12.png);
+                background-image: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ),url(./../img/food12.png);
             }
             #card13 {
-                background-image: url(./../img/food2.png);
+                background-image: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ),url(./../img/food2.png);
             }
             #card14 {
-                background-image: url(./../img/food14.png);
+                background-image: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ),url(./../img/food14.png);
             }
             #card15 {
-                background-image: url(./../img/food15.png);
+                background-image: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ),url(./../img/food15.png);
             }
            
         }
