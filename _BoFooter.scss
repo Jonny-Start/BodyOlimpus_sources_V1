@@ -1,5 +1,11 @@
-
-    footer {
+footer {
+    content {
+        height: 150px;
+        overflow: hidden;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        left: 0;
         div#bo_inner_footer {
             position: fixed;
             bottom: 0;
@@ -10,7 +16,8 @@
         }
         #menu-footer {
             height: 4em;
-            background-color: #2cd2da;
+            // background: #202020;
+            // border-top: 1px solid white;
             padding-top: 0.7em;
             display: flex;
             padding-left: 0.5em;
@@ -19,14 +26,13 @@
         .column {
             float: left;
             width: 25%;
-            background-color: #2cd2da;
+            // background: #202020;
             text-align: center;
         }
-
         img {
             margin-top: 4%;
             width: 2em;
             height: initial;
         }
     }
-
+}

@@ -1,8 +1,11 @@
-$color_fondo: #dee2f4;
-$color_rosa: #de2ccb;
-$color_azul_oscuro: #0d6aab;
+// colores en tema oscuro
+$color_fondo:black;
+$color_rosa: #bf85cd;
+$color_azul_oscuro: #9dbbf3;
 $color_gris_bordes: #abb4c7;
 $color_hover_botones:rgb(44, 56, 61);
+// colores en tema claro
+// $color_fondo: background: linear-gradient(#7874c9, #f1f1f3); -> color de fondo de botones de sección como el menú
 @import "_BoMyAccount";
 @import "_BoLogin";
 @import "_BoCreateAccount";
@@ -76,7 +79,7 @@ $color_hover_botones:rgb(44, 56, 61);
 }
 
 div#messagehelp {
-    background-color: #13aa98;
+    background: linear-gradient( #3c3656, #242020);
     width: 100%;
     position: fixed;
     left: 0px;
