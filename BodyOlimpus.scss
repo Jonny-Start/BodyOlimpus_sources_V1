@@ -4,8 +4,12 @@ $color_rosa: #bf85cd;
 $color_azul_oscuro: #9dbbf3;
 $color_gris_bordes: #abb4c7;
 $color_hover_botones:rgb(44, 56, 61);
+$color_letra: #979696;
 // colores en tema claro
-// $color_fondo: background: linear-gradient(#7874c9, #f1f1f3); -> color de fondo de botones de sección como el menú
+// $color_fondo: background: radial-gradient(#9d9d9d, #f3f3f3); -> color de fondo
+//  color para tema en blanco de los contenedores del myaccount y settings background: linear-gradient(#b5a6a6, #423e3e);
+// color de letra y títulos color: #2e2727;
+// color de header y footer #21152a;
 @import "_BoMyAccount";
 @import "_BoLogin";
 @import "_BoCreateAccount";
@@ -15,36 +19,7 @@ $color_hover_botones:rgb(44, 56, 61);
 @import "_BoSettings";
 @import "_BoNotifications";
 @import "_BoFeeding";
-@import "_BoFood1";
-@import "_BoFood2";
-@import "_BoFood3";
-@import "_BoFood4";
-@import "_BoFood5";
-@import "_BoFood6";
-@import "_BoFood7";
-@import "_BoFood8";
-@import "_BoFood9";
-@import "_BoFood10";
-@import "_BoFood11";
-@import "_BoFood12";
-@import "_BoFood13";
-@import "_BoFood14";
-@import "_BoFood15";
 @import "_BoExercise";
-@import "_BoExercises1";
-@import "_BoExercises2";
-@import "_BoExercises3";
-@import "_BoExercises4";
-@import "_BoExercises5";
-@import "_BoExercises6";
-@import "_BoExercises7";
-@import "_BoExercises8";
-@import "_BoExercises9";
-@import "_BoExercises10";
-@import "_BoExercises11";
-@import "_BoExercises12";
-@import "_BoExercises13";
-@import "_BoExercises14";
 @import "_BoGraphics";
 @import "_BoWeight";
 @import "_BoProfile";
@@ -94,7 +69,7 @@ div#messagehelp {
 }
 
 h4 {
-    color: white;
+    color: $color_letra;
     font-weight: bold;
     width: 100%;
     left: 0;

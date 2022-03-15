@@ -15,14 +15,16 @@ body#bo_myaccount {
                 flex-wrap: wrap;
                 justify-content: space-around;
                 a {
+                    color: $color_letra;
                     .content-myaccount {
                         margin-top: 2%;
                         width: auto;
                         height: auto;
                         padding: 2%;
+                        //  color para tema en blanco de los contenedores background: linear-gradient(#938585, #523d6a);
                         background: linear-gradient( #3c3656, #242020);
                         border: 2px solid $color_fondo;
-                        border-radius: 27px;
+                        border-radius: 15px;
                         margin-bottom: 0.2em;
                         display: flex;
                         flex-direction: column;
