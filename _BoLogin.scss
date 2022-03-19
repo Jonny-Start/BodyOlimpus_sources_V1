@@ -4,6 +4,9 @@ body#bo_login {
     div#container-header {
         display: none;
     }
+    header {
+        display: none;
+    }
     .card {
         margin-bottom: 20px;
         border: none;
@@ -27,11 +30,11 @@ body#bo_login {
                 }
             }
             .text-login {
-                color: $color_rosa;
+                color: #9DBBF3;
                 font-weight: bold;
             }
             .text-start {
-                color: $color_azul_oscuro;
+                color: #FFF8F8;
             }
             #text-link {
                 text-decoration: $color_azul_oscuro underline;
@@ -42,19 +45,19 @@ body#bo_login {
                 display: block;
                 margin: 20px auto;
                 text-align: center;
-                border: 2px solid #3498db;
+                border: 2px solid #6093f1;
                 width: 70%;
                 min-height: 3em;
-                color: #0d6aab;
-                border-radius: 25px;
+                color: #9DBBF3;
+                border-radius: 15px;
             }
             .container-button {
                 input[type="submit"] {
                     border: 0;
                     background: $color_azul_oscuro;
                     text-align: center;
-                    color: white;
-                    border-radius: 25px;
+                    color: #FFF8F8;
+                    border-radius: 15px;
                     cursor: pointer;
                     min-height: 3em;
                     width: 40%;
@@ -76,8 +79,7 @@ body#bo_login {
         div.alingLeft {
             width: 50%;
             float: left;
-            //________________________
-            background-color: rebeccapurple;
+            background-color: #FFF8F8;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -109,6 +111,10 @@ body#bo_login {
     @media only screen and (orientation: portrait) {
         div#form-login {
             margin-top: 15%;
+        }
+        div.alingLeft {
+            background-color: #FFF8F8;
+            border-radius: 15px 15px 0px 0px;
         }
     }
     footer {

@@ -32,6 +32,46 @@ $color_letra: #979696;
 * Son estilos globales
 **/
 
+.light {
+    background-color: #FFF8F8;
+    .colorText {
+        color: #FFF8F8
+    }
+    .colorTextHighlight {
+        color: #6128E5;
+    }
+    .colorHeader,
+    .colorFooter {
+        background-color: #7793C8;
+    }
+    .colorContainers {
+        background-image: linear-gradient(#FFF8F8, #9DBBF3);
+    }
+    .borderColorBody {
+        border-color: #FFF8F8;
+    }
+}
+
+.dark {
+    background-color: #0A0A0A;
+    .colorText {
+        color: #9DBBF3
+    }
+    .colorTextHighlight {
+        color: #FFF8F8
+    }
+    .colorHeader,
+    .colorFooter {
+        background-color: #7793C8;
+    }
+    .colorContainers {
+        background-image: linear-gradient(#3C3656, #0A0A0A);
+    }
+    .borderColorBody {
+        border-color: #0A0A0A;
+    }
+}
+
 .tarjetData {
     background-color: white;
     border-radius: 15px;
@@ -68,6 +108,7 @@ div#messagehelp {
     z-index: 1;
 }
 
+// evaluar esta clase
 h4 {
     color: $color_letra;
     font-weight: bold;

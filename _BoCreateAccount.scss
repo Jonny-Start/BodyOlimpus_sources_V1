@@ -4,6 +4,9 @@ body#bo_create_account {
     div#container-header {
         display: none;
     }
+    header {
+        display: none;
+    }
     .card {
         margin-bottom: 20px;
         border: none;
@@ -14,7 +17,7 @@ body#bo_create_account {
             background: $color_fondo;
             width: 100%;
             text-align: center;
-            border-radius: 16px;
+            border-radius: 15px;
             #text-slogan {
                 color: #25acb9;
                 font-weight: bold;
@@ -52,7 +55,7 @@ body#bo_create_account {
                 width: 70%;
                 min-height: 3em;
                 color: #0d6aab;
-                border-radius: 25px;
+                border-radius: 15px;
             }
             .container-button {
                 input[type="submit"] {
@@ -60,7 +63,7 @@ body#bo_create_account {
                     background: $color_azul_oscuro;
                     text-align: center;
                     color: white;
-                    border-radius: 25px;
+                    border-radius: 15px;
                     cursor: pointer;
                     min-height: 3em;
                     width: 40%;
@@ -81,8 +84,7 @@ body#bo_create_account {
         div.alingLeft {
             width: 50%;
             float: left;
-            //________________________
-            background-color: rebeccapurple;
+            background-color: #FFF8F8;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -110,6 +112,10 @@ body#bo_create_account {
         }
     }
     @media only screen and (orientation: portrait) {
+        div.alingLeft {
+            background-color: #FFF8F8;
+            border-radius: 15px 15px 0px 0px;
+        }
         div#form-create-account {
             margin-top: 15%;
         }
