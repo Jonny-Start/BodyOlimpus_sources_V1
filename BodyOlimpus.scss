@@ -99,7 +99,7 @@ div#messagehelp {
     color: white;
     padding: 2em;
     text-align: center;
-    z-index: 1;
+    z-index: 5;
 }
 
 // evaluar esta clase
@@ -110,5 +110,15 @@ h4 {
     left: 0;
     text-align: center;
     position: fixed;
-    z-index: 91;
+    z-index: 3;
+}
+
+#opacityNotification {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #000000c2;
+    z-index: 4;
 }

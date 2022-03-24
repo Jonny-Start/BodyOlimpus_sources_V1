@@ -8,8 +8,8 @@ body#bo_profile {
     #container-header {
         display: none;
     }
-    .textHeader {
-        z-index: 90;
+    header {
+        display: none;
     }
     button#submitProfile {
         margin-bottom: 4em;
