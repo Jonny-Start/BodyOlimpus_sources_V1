@@ -1,5 +1,5 @@
 body#bo_profileUpdate {
-    background: $color_fondo;
+     
     padding: 10px;
     text-align: center;
     -ms-flex-pack: center;
@@ -17,7 +17,6 @@ body#bo_profileUpdate {
             border: none;
             background-color: transparent;
             div#tarjetHead {
-                background-color: #21a9af;
                 padding: 3vh;
                 position: fixed;
                 left: 0;
@@ -37,17 +36,32 @@ body#bo_profileUpdate {
                 margin-bottom: 5em;
             }
             label {
-                color: $color_azul_oscuro;
+                 
                 font-weight: bold;
             }
             input {
-                border-radius: 10px;
-                color: $color_azul_oscuro;
-                font-weight: bold;
+                background: none;
+                    text-align: center;
+                    border: 2px solid #3498db;
+                    width: 100%;
+                    min-height: 3em;
+                    color: #0d6aab;
+                    border-radius: 10px;
             }
             input[type="date"]::-webkit-calendar-picker-indicator {
                 background: none;
                 width: 8em;
+            }
+            button#profileUpdateSubmit {
+                background: #3498db;
+                border: 0;
+                text-align: center;
+                border-radius: 10px;
+                cursor: pointer;
+                min-height: 2.5em;
+                width: 40%;
+                font-weight: bold;
+                margin-bottom: 6em;
             }
         }
     }

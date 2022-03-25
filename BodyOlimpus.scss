@@ -1,15 +1,14 @@
 // colores en tema oscuro
-$color_fondo:black;
-$color_rosa: #bf85cd;
-$color_azul_oscuro: #9dbbf3;
-$color_gris_bordes: #abb4c7;
-$color_hover_botones:rgb(44, 56, 61);
-$color_letra: #979696;
+$negro-Bo:#0A0A0A;
+$blanco-Bo: #fff8f8;
+$azul-claro-Bo: #9DBBF3;
+$gris-oscuro-Bo:#1c1d1e;
+$gradient-oscuro-Bo: linear-gradient(#3C3656,#0A0A0A);
 // colores en tema claro
-// $color_fondo: background: radial-gradient(#9d9d9d, #f3f3f3); -> color de fondo
-//  color para tema en blanco de los contenedores del myaccount y settings background: linear-gradient(#b5a6a6, #423e3e);
-// color de letra y títulos color: #2e2727;
-// color de header y footer #21152a;
+$mora-azul-Bo: #6128e5;
+$gris-claro-Bo:#7793c8;
+$gradient-claro-Bo: linear-gradient(#FFF8F8, #9DBBF3);
+
 @import "_BoMyAccount";
 @import "_BoLogin";
 @import "_BoCreateAccount";
@@ -33,41 +32,41 @@ $color_letra: #979696;
 **/
 
 .light {
-    background-color: #FFF8F8;
+    background-color: $blanco-Bo;
     .colorText {
-        color: #FFF8F8
+        color: $negro-Bo;
     }
     .colorTextHighlight {
-        color: #6128E5;
+        color: $mora-azul-Bo;
     }
     .colorHeader,
     .colorFooter {
-        background-color: #7793C8;
+        background-color: $gris-claro-Bo;
     }
     .colorContainers {
-        background-image: linear-gradient(#FFF8F8, #9DBBF3);
+        background-image: $gradient-claro-Bo;
     }
 }
 
 .dark {
-    background-color: #0A0A0A;
+    background-color: $negro-Bo;
     .colorText {
-        color: #9DBBF3
+        color: $azul-claro-Bo;
     }
     .colorTextHighlight {
-        color: #FFF8F8
+        color: $blanco-Bo;
     }
     .colorHeader,
     .colorFooter {
-        background-color: #1C1D1E;
+        background-color: $gris-oscuro-Bo;
     }
     .colorContainers {
-        background-image: linear-gradient(#3C3656, #0A0A0A);
+        background-image: $gradient-oscuro-Bo;
     }
 }
 
 .tarjetData {
-    background-color: white;
+    background-color: $blanco-Bo;
     border-radius: 15px;
     min-height: 5em;
     max-width: 45%;
@@ -88,7 +87,7 @@ $color_letra: #979696;
 }
 
 div#messagehelp {
-    background: linear-gradient( #3c3656, #242020);
+    background: $gradient-oscuro-Bo;
     width: 100%;
     position: fixed;
     left: 0px;
@@ -96,7 +95,7 @@ div#messagehelp {
     height: auto;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
-    color: white;
+    color: $blanco-Bo;
     padding: 2em;
     text-align: center;
     z-index: 5;
@@ -104,7 +103,7 @@ div#messagehelp {
 
 // evaluar esta clase
 h4 {
-    color: $color_letra;
+   
     font-weight: bold;
     width: 100%;
     left: 0;
@@ -119,6 +118,6 @@ h4 {
     height: 100%;
     left: 0;
     top: 0;
-    background-color: #000000c2;
+    background-color: $negro-Bo;
     z-index: 4;
 }

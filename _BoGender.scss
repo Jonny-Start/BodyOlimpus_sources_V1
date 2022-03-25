@@ -1,5 +1,4 @@
 body#bo_gender {
-    background: $color_fondo;
     padding: 10px;
     text-align: center;
     -ms-flex-pack: center;
@@ -9,7 +8,6 @@ body#bo_gender {
         background-color: transparent;
         margin-top: 10vh;
         h5 {
-            color: $color_azul_oscuro;
             font-weight: bold;
         }
         ul {
@@ -28,16 +26,19 @@ body#bo_gender {
                 // width: 50%;
             }
         }
+        input[type="checkbox"] {
+            display: none;
+        }
         input[type="submit"] {
+            background: #3498db;
             border: 0;
-            background: $color_azul_oscuro;
             text-align: center;
-            color: white;
-            border-radius: 25px;
+            border-radius: 10px;
             cursor: pointer;
-            min-height: 3em;
-            width: 30%;
-            box-shadow: 1px 2px 6px #332f2f;
+            min-height: 2.5em;
+            width: 40%;
+            font-weight: bold;
+            margin-bottom: 6em;
         }
     }
     .option_item {
@@ -46,13 +47,13 @@ body#bo_gender {
         }
         .option_inner {
             width: 13em;
-            background: $color_fondo;
+
             border-radius: 18px;
             text-align: center;
             cursor: pointer;
             color: #585c68;
             border: 5px solid transparent;
-            box-shadow: 3px 14px 27px $color_gris_bordes;
+
             position: relative;
             display: flex;
             flex-direction: column;
@@ -70,11 +71,11 @@ body#bo_gender {
             }
         }
     }
-    .option_item .checkbox:checked~.option_inner.femenino {
+    .option_item .checkbox:checked ~ .option_inner.femenino {
         border-color: #de2ccb;
         color: #de2ccb;
     }
-    .option_item .checkbox:checked~.option_inner.masculino {
+    .option_item .checkbox:checked ~ .option_inner.masculino {
         border-color: #0d6aab;
         color: #0d6aab;
     }
@@ -97,7 +98,7 @@ body#bo_gender {
         border-color: transparent transparent #fff #fff;
         transform: rotate(-45deg);
     }
-    .option_item .checkbox:checked~.option_inner .tickmark {
+    .option_item .checkbox:checked ~ .option_inner .tickmark {
         display: block;
     }
     .option_item .option_inner.femenino .tickmark {
@@ -131,7 +132,6 @@ body#bo_gender {
     .option_inner:hover,
     #button-back:hover,
     #button-next:hover {
-        box-shadow: 0 4px 16px $color_hover_botones;
         transition: all 0.2s ease;
     }
     // // Para volver el programa responsive
