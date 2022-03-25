@@ -1,5 +1,5 @@
 body#bo_graphics {
-    background: $color_fondo;
+     
     padding: 10px;
     text-align: center;
     // div que contiene el form del gender
@@ -13,6 +13,10 @@ body#bo_graphics {
         flex-direction: row;
         justify-content: center;
         align-items: center;
+        
+        div.tarjetData{
+            background-color: transparent;
+        }
     }
     canvas {
         margin-top: 3em;

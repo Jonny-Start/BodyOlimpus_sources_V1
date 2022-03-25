@@ -14,7 +14,7 @@ body#bo_login {
         background-color: transparent;
         // diseño de los elementos que se encuentran dentro del form del login
         #form-login {
-            background: $color_fondo;
+             
             width: 100%;
             text-align: center;
             border-radius: 16px;
@@ -25,7 +25,7 @@ body#bo_login {
                     width: 100%;
                 }
                 h3 {
-                    color: $color_azul_oscuro;
+                     
                     font-weight: bold;
                 }
             }
@@ -37,7 +37,7 @@ body#bo_login {
                 color: #FFF8F8;
             }
             #text-link {
-                text-decoration: $color_azul_oscuro underline;
+                
             }
             input[type="text"],
             input[type="password"] {
@@ -54,7 +54,7 @@ body#bo_login {
             .container-button {
                 input[type="submit"] {
                     border: 0;
-                    background: $color_azul_oscuro;
+                     
                     text-align: center;
                     color: #FFF8F8;
                     border-radius: 15px;
@@ -71,7 +71,7 @@ body#bo_login {
         #form-login input[type="text"]:hover,
         #form-login input[type="password"]:hover,
         #form-login input[type="submit"]:hover {
-            box-shadow: 0 4px 16px $color_hover_botones;
+             
             transition: all 0.2s ease;
         }
     }

@@ -19,7 +19,7 @@ body#bo_myaccount {
                         width: auto;
                         height: auto;
                         padding: 2%;
-                        border: 2px solid $color_fondo;
+                        // border: 2px solid $color_fondo;
                         border-radius: 15px;
                         margin-bottom: 0.2em;
                         display: flex;
@@ -35,6 +35,13 @@ body#bo_myaccount {
                             font-size: 3rem;
                         }
                     }
+                }
+                a:link,
+                a:visited,
+                a:hover,
+                a:active {
+                    text-decoration: none;
+                    outline: none;
                 }
             }
         }

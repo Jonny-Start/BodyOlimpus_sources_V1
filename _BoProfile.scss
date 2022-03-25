@@ -1,5 +1,5 @@
 body#bo_profile {
-    background: $color_fondo;
+     
     padding: 10px;
     text-align: center;
     -ms-flex-pack: center;
@@ -12,7 +12,15 @@ body#bo_profile {
         display: none;
     }
     button#submitProfile {
-        margin-bottom: 4em;
+        background: #3498db;
+        border: 0;
+        text-align: center;
+        border-radius: 10px;
+        cursor: pointer;
+        min-height: 2.5em;
+        width: 40%;
+        font-weight: bold;
+        margin-bottom: 6em;
     }
     div#container {
         margin-top: 1em;
@@ -20,7 +28,6 @@ body#bo_profile {
             border: none;
             background-color: transparent;
             div#tarjetHead {
-                background-color: #21a9af;
                 padding: 3vh;
                 position: fixed;
                 left: 0;
@@ -43,11 +50,10 @@ body#bo_profile {
                 // align-items: flex-start;
                 // justify-content: center;
                 div.DataUser {
-                    color: $color_azul_oscuro;
+                     
                     font-weight: bold;
                     font-size: 1.5rem;
                     span {
-                        color: #007bff;
                         font-weight: 100;
                         font-size: 1.4rem
                     }

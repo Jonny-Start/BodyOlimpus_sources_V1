@@ -14,7 +14,7 @@ body#bo_create_account {
         background-color: transparent;
         // diseño de los elementos que se encuentran dentro del form del create account
         #form-create-account {
-            background: $color_fondo;
+             
             width: 100%;
             text-align: center;
             border-radius: 15px;
@@ -26,9 +26,6 @@ body#bo_create_account {
                 position: relative;
                 bottom: 0.5em;
             }
-            #text-title {
-                color: $color_azul_oscuro;
-            }
             .container-logo {
                 padding: 1em;
                 .logo-img {
@@ -37,12 +34,12 @@ body#bo_create_account {
                 }
             }
             .text-create-account {
-                color: $color_rosa;
+                
                 font-weight: bold;
-                text-decoration: $color_azul_oscuro underline;
+                
             }
             .text-start {
-                color: $color_azul_oscuro;
+                 
                 text-decoration: underline;
             }
             input[type="text"],
@@ -60,7 +57,7 @@ body#bo_create_account {
             .container-button {
                 input[type="submit"] {
                     border: 0;
-                    background: $color_azul_oscuro;
+                     
                     text-align: center;
                     color: white;
                     border-radius: 15px;
@@ -76,7 +73,7 @@ body#bo_create_account {
         #form-create-account input[type="text"]:hover,
         #form-create-account input[type="password"]:hover,
         #form-create-account input[type="submit"]:hover {
-            box-shadow: 0 4px 16px $color_hover_botones;
+             
             transition: all 0.2s ease;
         }
     }

@@ -1,5 +1,5 @@
 body#bo_place {
-    background: $color_fondo;
+     
     padding: 10px;
     text-align: center;
     -ms-flex-pack: center;
@@ -10,7 +10,7 @@ body#bo_place {
         background-color: transparent;
         margin-top: 10vh;
         h5 {
-            color: $color_azul_oscuro;
+             
             font-weight: bold;
         }
         // ul que contiene los dos botones de casa y gym con los demás objetos dentro
@@ -31,7 +31,7 @@ body#bo_place {
         }
         input[type="submit"] {
             border: 0;
-            background: $color_azul_oscuro;
+             
             text-align: center;
             color: white;
             border-radius: 25px;
@@ -47,13 +47,13 @@ body#bo_place {
         }
         .option_inner {
             width: 13em;
-            background: $color_fondo;
+             
             border-radius: 18px;
             text-align: center;
             cursor: pointer;
             color: #585c68;
             border: 5px solid transparent;
-            box-shadow: 3px 14px 27px $color_gris_bordes;
+           
             position: relative;
             display: flex;
             flex-direction: column;
@@ -132,7 +132,7 @@ body#bo_place {
     .option_inner:hover,
     #button-back:hover,
     #button-next:hover {
-        box-shadow: 0 4px 16px $color_hover_botones;
+         
         transition: all 0.2s ease;
     }
 }
