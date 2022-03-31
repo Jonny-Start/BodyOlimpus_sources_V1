@@ -1,17 +1,8 @@
 header {
-    div#bo_header {
-        position: fixed;
-        left: 0;
-        width: 100%;
-        top: 0;
-        z-index: 3;
-    }
-    #container-header {
-        height: 5em;
-        background: #202020;
-        border-bottom: 1px solid white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+    position: fixed;
+    left: 0;
+    width: 100%;
+    top: 0;
+    z-index: 3;
+    height: 5em;
 }

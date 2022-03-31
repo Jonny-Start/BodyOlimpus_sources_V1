@@ -3,12 +3,11 @@ $negro-Bo:#0A0A0A;
 $blanco-Bo: #fff8f8;
 $azul-claro-Bo: #9DBBF3;
 $gris-oscuro-Bo:#1c1d1e;
-$gradient-oscuro-Bo: linear-gradient(#3C3656,#0A0A0A);
+$gradient-oscuro-Bo: linear-gradient(#3C3656, #0A0A0A);
 // colores en tema claro
 $mora-azul-Bo: #6128e5;
 $gris-claro-Bo:#7793c8;
 $gradient-claro-Bo: linear-gradient(#FFF8F8, #9DBBF3);
-
 @import "_BoMyAccount";
 @import "_BoLogin";
 @import "_BoCreateAccount";
@@ -87,7 +86,7 @@ $gradient-claro-Bo: linear-gradient(#FFF8F8, #9DBBF3);
 }
 
 div#messagehelp {
-    background: $gradient-oscuro-Bo;
+    // background: $gradient-oscuro-Bo;
     width: 100%;
     position: fixed;
     left: 0px;
@@ -95,7 +94,7 @@ div#messagehelp {
     height: auto;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
-    color: $blanco-Bo;
+    // color: $blanco-Bo;
     padding: 2em;
     text-align: center;
     z-index: 5;
@@ -103,7 +102,6 @@ div#messagehelp {
 
 // evaluar esta clase
 h4 {
-   
     font-weight: bold;
     width: 100%;
     left: 0;
@@ -118,6 +116,6 @@ h4 {
     height: 100%;
     left: 0;
     top: 0;
-    background-color: $negro-Bo;
+    background-color: #0a0a0a9e;
     z-index: 4;
 }

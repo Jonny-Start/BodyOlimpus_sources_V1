@@ -14,7 +14,6 @@ body#bo_create_account {
         background-color: transparent;
         // diseño de los elementos que se encuentran dentro del form del create account
         #form-create-account {
-             
             width: 100%;
             text-align: center;
             border-radius: 15px;
@@ -34,12 +33,9 @@ body#bo_create_account {
                 }
             }
             .text-create-account {
-                
                 font-weight: bold;
-                
             }
             .text-start {
-                 
                 text-decoration: underline;
             }
             input[type="text"],
@@ -56,16 +52,16 @@ body#bo_create_account {
             }
             .container-button {
                 input[type="submit"] {
-                    border: 0;
-                     
-                    text-align: center;
-                    color: white;
-                    border-radius: 15px;
-                    cursor: pointer;
                     min-height: 3em;
-                    width: 40%;
-                    box-shadow: 1px 2px 6px #332f2f;
                     margin-bottom: 2em;
+                    background: #3498db;
+                    cursor: pointer;
+                    font-weight: bold;
+                    text-align: center;
+                    border: 2px solid #3498db;
+                    width: 50%;
+                    min-height: 3em;
+                    border-radius: 10px;
                 }
             }
         }
@@ -73,7 +69,6 @@ body#bo_create_account {
         #form-create-account input[type="text"]:hover,
         #form-create-account input[type="password"]:hover,
         #form-create-account input[type="submit"]:hover {
-             
             transition: all 0.2s ease;
         }
     }
@@ -91,6 +86,8 @@ body#bo_create_account {
         div.alingRigth {
             width: 50%;
             float: right;
+            background-color: $negro-Bo;
+            border-radius: 1px 15px 15px 0px;
             form {
                 margin-top: 2em;
             }
@@ -112,6 +109,10 @@ body#bo_create_account {
         div.alingLeft {
             background-color: #FFF8F8;
             border-radius: 15px 15px 0px 0px;
+        }
+        div.alignRight {
+            background-color: $negro-Bo;
+            border-radius: 0px 0px 15px 15px;
         }
         div#form-create-account {
             margin-top: 15%;
