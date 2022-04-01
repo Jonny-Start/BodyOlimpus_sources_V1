@@ -71,9 +71,9 @@ div#switchColor {
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: $blanco-Bo;
-        -webkit-transition: .4s;
-        transition: .4s;
+        // background-color: $blanco-Bo;
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
     }
     /* Pintamos la perilla de control o slider usando el selector before */
     .slider:before {
@@ -83,30 +83,36 @@ div#switchColor {
         width: 26px;
         left: 4px;
         bottom: 4px;
-        background-color: $negro-Bo;
-        -webkit-transition: .4s;
-        transition: .4s;
+        // background-color: $negro-Bo;
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+        font-family: FontAwesome;
+        font-size: 1.5em;
+        content: "\f186";
     }
-    /* Cambiamos el color de fondo cuando el checkbox esta activado */
-    input:checked+.slider {
-        background-color: $negro-Bo;
-        border: 1px $blanco-Bo solid;
-    }
-    input:checked+.slider:before {
-        background-color: $blanco-Bo;
-    }
+    // /* Cambiamos el color de fondo cuando el checkbox esta activado */
+    // input:checked + .slider {
+    //     // background-color: $negro-Bo;
+    //     // border: 1px $blanco-Bo solid;
+    // }
+    // input:checked + .slider:before {
+    //     // background-color: $blanco-Bo;
+    // }
     /* Deslizamos el slider a la derecha cuando el checkbox esta activado */
-    input:checked+.slider:before {
+    input:checked + .slider:before {
         -webkit-transform: translateX(26px);
         -ms-transform: translateX(26px);
         transform: translateX(26px);
+        font-family: FontAwesome;
+        font-size: 1.5em;
+        content: "\f0eb";
     }
     /* Aplicamos efecto de bordes redondeados en slider y en el fondo del slider */
-    .slider.round {
-        border-radius: 34px;
-        border: 1px $negro-Bo solid;
-    }
-    .slider.round:before {
-        border-radius: 50%;
-    }
+    // .slider.round {
+    //     // border-radius: 34px;
+    //     // border: 1px $negro-Bo solid;
+    // }
+    // .slider.round:before {
+    //     // border-radius: 50%;
+    // }
 }
