@@ -20,6 +20,7 @@ body#bo_dashboard {
         background: #003147;
         transition: 0.5s;
         overflow: hidden;
+        overflow-y: auto;
     }
     .navigationAdmin.active {
         width: 60px;

@@ -28,6 +28,10 @@ $gradient-claro-Bo: linear-gradient(#FFF8F8, #9DBBF3);
 @import "_BoAdminDashboard";
 @import "_BoUsers";
 @import "_BoProspects";
+@import "_BoCoach";
+@import "_BoNotificationsUser";
+@import "_BoCustomerAdmins";
+@import "_BoCustomerAdminsCRUD";
 
 /**
 * Son estilos globales
@@ -121,4 +125,40 @@ h4 {
     top: 0;
     background-color: #0a0a0a9e;
     z-index: 4;
+}
+
+
+/*
+*NavBar Admin
+*/
+
+.subtitle {
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+}
+
+.subtitle.active {
+    background: #005177;
+    width: initial;
+    height: initial;
+    transition: 0.7;
+}
+
+.subtitleParent {
+    i.fa-angle-down {
+        position: absolute;
+        top: 35%;
+        right: 1em;
+        font-size: 1.2em;
+        transform: rotate(0deg);
+    }
+}
+
+.subtitleParent.active {
+    background: #02415e;
+    i.fa-angle-down {
+        rotate: -90;
+        transform: rotate(180deg);
+    }
 }

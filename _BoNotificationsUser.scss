@@ -1,0 +1,16 @@
+body#bo_notifications {
+    padding-top: 5em;
+    button {
+        background-color: transparent;
+        border: 0px;
+        font-size: 2em;
+        float: right;
+    }
+    div#contentNotifications {
+        width: 100%;
+        height: auto;
+        padding-top: 3em;
+        border-radius: 10px;
+        background-color: aqua;
+    }
+}
