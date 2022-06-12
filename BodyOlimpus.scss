@@ -24,12 +24,13 @@ $gradient-claro-Bo: linear-gradient(#FFF8F8, #9DBBF3);
 @import "_BoProfileUpdate";
 @import "_BoChangePassword";
 @import "_BoHeader";
+@import "_BoNotificationsUser";
 @import "_BoPasswordEmail";
+//Admin
 @import "_BoAdminDashboard";
 @import "_BoUsers";
 @import "_BoProspects";
 @import "_BoCoach";
-@import "_BoNotificationsUser";
 @import "_BoCustomerAdmins";
 @import "_BoCustomerAdminsCRUD";
 
