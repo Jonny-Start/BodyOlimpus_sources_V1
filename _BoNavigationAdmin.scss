@@ -1,0 +1,119 @@
+.navigationAdmin {
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background: #003147;
+    transition: 0.5s;
+    // overflow: scroll;
+    overflow-y: auto;
+    left: 0;
+    top: 0;
+}
+
+.navigationAdmin.active {
+    width: 60px;
+}
+
+.navigationAdmin ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
+}
+
+.navigationAdmin ul li {
+    position: relative;
+    width: 100%;
+    list-style: none;
+}
+
+.navigationAdmin ul li:hover {
+    background: #03a9f4;
+}
+
+.navigationAdmin ul li:nth-child(1) {
+    margin-top: 1em;
+    margin-bottom: 20px;
+}
+
+.navigationAdmin ul li:nth-child(1):hover {
+    background: transparent;
+}
+
+.navigationAdmin ul li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navigationAdmin ul li a .icon {
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.navigationAdmin ul li a span.img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+    }
+}
+
+.navigationAdmin ul li a .icon i {
+    color: #fff;
+    font-size: 24px;
+}
+
+.navigationAdmin ul li a .title {
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    height: 60px;
+    line-height: 60px;
+    white-space: nowrap;
+
+    h2 {
+        line-height: 60px;
+    }
+}
+
+@media (max-width: 992px) {
+    .navigationAdmin {
+        left: -300px;
+    }
+
+    .navigationAdmin.active {
+        left: 0;
+        width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navigationAdmin {
+        width: 100%;
+        left: -100%;
+        z-index: 1000;
+    }
+
+    .navigationAdmin.active {
+        width: 100%;
+        left: 0;
+    }
+}
