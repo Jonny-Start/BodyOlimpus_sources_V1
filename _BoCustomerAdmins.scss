@@ -151,12 +151,11 @@ body#bo_customerAdmins {
     .details .recentOrders table tbody tr:hover {
         background: #03a9f4;
         color: #fff;
-
-        td {
-            i {
-                color: #fff;
-            }
-        }
+        // td {
+        //     i {
+        //         color: #fff;
+        //     }
+        // }
     }
 
     .details .recentOrders table tr td {
@@ -205,17 +204,17 @@ body#bo_customerAdmins {
         background: #1795ce;
     }
 
-    @media (max-width: 992px) {
-        .main {
-            width: 100%;
-            left: 0;
-        }
+    // @media (max-width: 992px) {
+    //     .main {
+    //         width: 100%;
+    //         left: 0;
+    //     }
 
-        .main.active {
-            width: calc(100% - 300px);
-            left: 300px;
-        }
-    }
+    //     .main.active {
+    //         width: calc(100% - 300px);
+    //         left: 300px;
+    //     }
+    // }
 
 
     div.contentSelectOptions {
@@ -304,8 +303,9 @@ body#bo_customerAdmins {
                     color: #555;
                 }
 
-                li:hover a {
+                li:hover a i{
                     color: #ff216d;
+                    z-index: 2;
                 }
             }
 
@@ -328,7 +328,7 @@ body#bo_customerAdmins {
                 z-index: 1;
                 transform: translatex(-3.5em);
                 transition-delay: 0s, 0.5s, 0.5s;
-                box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+                box-shadow: -2px 5px 25px rgb(0 0 0 / 27%);
 
                 ul li {
                     opacity: 1;

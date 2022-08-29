@@ -32,7 +32,7 @@ $gradient-claro-Bo: linear-gradient(#FFF8F8, #9DBBF3);
 @import "_BoProspects";
 @import "_BoCoach";
 @import "_BoCustomerAdmins";
-@import "_BoCustomerAdminsCRUD";
+@import "_BoCustomerAdminsEdit";
 @import "_BoNavigationAdmin";
 @import "_BoTopBarAdmin";
 
@@ -73,6 +73,41 @@ $gradient-claro-Bo: linear-gradient(#FFF8F8, #9DBBF3);
         background-image: $gradient-oscuro-Bo;
     }
 }
+
+
+.main {
+    position: absolute;
+    width: calc(100% - 300px);
+    left: 300px;
+    min-height: 100vh;
+    // background: white;
+    background-color: #00000012;
+    transition: 0.5s;
+    top: 0;
+}
+.main.active {
+    width: calc(100% - 60px);
+    left: 60px;
+}
+@media (max-width: 992px) {
+    .main {
+        width: 100%;
+        left: 0;
+    }
+
+    .main.active {
+        width: calc(100% - 300px);
+        left: 300px;
+    }
+}
+@media (max-width: 480px) {
+    .main,
+    .main.active {
+        width: 100%;
+        left: 0;
+    }
+}
+
 
 .tarjetData {
     background-color: $blanco-Bo;

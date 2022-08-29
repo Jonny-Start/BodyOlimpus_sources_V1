@@ -1,0 +1,33 @@
+body#bo_customerAdminsCRUD{
+
+    // overflow: hidden;
+    header#bo_header {
+        display: none;
+    }
+
+    .container {
+        // position: relative;
+        width: 100%;
+    }
+
+    div#content {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: 100%;
+        min-height: calc(100vh - 60px);
+        // background-color: #00000012;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+    div#contentForm{
+        max-width: 80%;
+        background-color: white;
+        padding: 20px;
+        border-radius: 15px;
+    }
+    span.required{
+        color: red;
+    }
+}
